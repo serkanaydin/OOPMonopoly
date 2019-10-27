@@ -2,7 +2,6 @@ public class main {
 
     public static void main(String[] args) {
 
-        System.out.println("FAA");
-        System.out.println("saa");
+       int userCount =Integer.parseInt(args[0]);
     }
 }
