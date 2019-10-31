@@ -1,27 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4985a0b8-a103-4b63-9ae8-136edc38f5cb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Die.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Square.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main.class" afterDir="false" />
+    <list default="true" id="4985a0b8-a103-4b63-9ae8-136edc38f5cb" name="Default Changelist" comment="hi">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/oopProject-Monopoly/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/oopProject-Monopoly/main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -40,14 +28,6 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="nodejs_package_manager_path" value="npm" />
-  </component>
-  <component name="RunAnythingCache">
-    <option name="myCommands">
-      <command value="java main 15" />
-      <command value="javac main.java" />
-      <command value="cd" />
-    </option>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -87,8 +67,7 @@
       <updated>1571908099645</updated>
       <workItem from="1571908104553" duration="326000" />
       <workItem from="1571923698783" duration="1267000" />
-      <workItem from="1572031312200" duration="771000" />
-      <workItem from="1572191143694" duration="876000" />
+      <workItem from="1572031312200" duration="485000" />
     </task>
     <task id="LOCAL-00001" summary="hi">
       <created>1572031548637</created>
@@ -97,14 +76,7 @@
       <option name="project" value="LOCAL" />
       <updated>1572031548637</updated>
     </task>
-    <task id="LOCAL-00002" summary="hi">
-      <created>1572031813965</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1572031813965</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,9 +87,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
