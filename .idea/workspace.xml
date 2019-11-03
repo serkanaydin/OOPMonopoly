@@ -3,12 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="490ef774-1ff0-4fb7-b2d1-40195ede529d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/oopProject-Monopoly/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/oopProject-Monopoly/main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Die.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Die.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MonopolyGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MonopolyGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Square.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +35,10 @@
   <component name="ProjectId" id="1Si0roJ5VKWHUe5Mjof2ZmatSan" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571926218131" />
@@ -60,6 +62,7 @@
     <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main" />
       <module name="oopProject-Monopoly" />
+      <option name="PROGRAM_PARAMETERS" value="serkan tarkan egemen" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -75,7 +78,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4985a0b8-a103-4b63-9ae8-136edc38f5cb" name="Default Changelist" comment="" />
+      <changelist id="490ef774-1ff0-4fb7-b2d1-40195ede529d" name="Default Changelist" comment="" />
       <created>1571908099645</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -83,6 +86,8 @@
       <workItem from="1571908104553" duration="326000" />
       <workItem from="1571923698783" duration="1267000" />
       <workItem from="1572031312200" duration="485000" />
+      <workItem from="1572737250345" duration="1998000" />
+      <workItem from="1572777240714" duration="3350000" />
     </task>
     <task id="LOCAL-00001" summary="hi">
       <created>1572031548637</created>
@@ -98,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572545707579</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="new commit">
+      <created>1572556046549</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1572556046549</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +142,11 @@
           <line>4</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/MonopolyGame.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main.java</url>
           <line>2</line>
@@ -140,7 +157,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/MonopolyGame.java</url>
-          <line>10</line>
+          <line>11</line>
           <properties class="MonopolyGame" method="startGame">
             <option name="EMULATED" value="true" />
           </properties>
@@ -148,7 +165,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/MonopolyGame.java</url>
-          <line>7</line>
+          <line>8</line>
           <properties class="MonopolyGame" method="&lt;init&gt;">
             <option name="EMULATED" value="true" />
           </properties>
@@ -156,13 +173,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/MonopolyGame.java</url>
-          <line>20</line>
-          <properties class="MonopolyGame" method="createSquares">
+          <line>59</line>
+          <properties class="MonopolyGame" method="checkGameEnd">
             <option name="EMULATED" value="true" />
           </properties>
-          <option name="timeStamp" value="5" />
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="die" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
