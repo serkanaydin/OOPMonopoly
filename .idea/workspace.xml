@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="490ef774-1ff0-4fb7-b2d1-40195ede529d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Board.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Die.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Die.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MonopolyGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MonopolyGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +26,11 @@
     <option name="ONTO" value="refs/remotes/origin/serkan-master" />
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="SERKAN &lt;serkan-aydin@msn.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="serkan" />
@@ -87,7 +93,9 @@
       <workItem from="1571923698783" duration="1267000" />
       <workItem from="1572031312200" duration="485000" />
       <workItem from="1572737250345" duration="1998000" />
-      <workItem from="1572777240714" duration="3350000" />
+      <workItem from="1572777240714" duration="5889000" />
+      <workItem from="1572884212913" duration="181000" />
+      <workItem from="1572884552222" duration="4513000" />
     </task>
     <task id="LOCAL-00001" summary="hi">
       <created>1572031548637</created>
@@ -110,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572556046549</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="new commit 3.11 16.07">
+      <created>1572786444400</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1572786444400</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,7 +147,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="hi" />
     <MESSAGE value="new commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="new commit" />
+    <MESSAGE value="new commit 3.11 16.07" />
+    <option name="LAST_COMMIT_MESSAGE" value="new commit 3.11 16.07" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -144,7 +160,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/MonopolyGame.java</url>
-          <line>21</line>
+          <line>18</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
@@ -157,14 +173,6 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/MonopolyGame.java</url>
-          <line>11</line>
-          <properties class="MonopolyGame" method="startGame">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/MonopolyGame.java</url>
           <line>8</line>
           <properties class="MonopolyGame" method="&lt;init&gt;">
             <option name="EMULATED" value="true" />
@@ -173,7 +181,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/MonopolyGame.java</url>
-          <line>59</line>
+          <line>45</line>
           <properties class="MonopolyGame" method="checkGameEnd">
             <option name="EMULATED" value="true" />
           </properties>

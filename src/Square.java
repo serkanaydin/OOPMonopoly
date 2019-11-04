@@ -1,17 +1,24 @@
 public class Square {
-    private int number;
+    private int index;
+    private String name;
     private String message;
 private Player owner;
-    public int getNumber() {
-        return number;
+Square(int index,String name){
+    this.index=index;
+    this.name=name;
+}
+    public int getIndex() {
+        return index;
     }
 
-    public void setNumber(int number) {
-        this.number = number;
-    }
+
 
     public Player getOwner() {
         return owner;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public void setOwner(Player owner) {

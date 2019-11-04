@@ -2,53 +2,39 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 public class MonopolyGame {
+    private int cycleCount;
     private Die[] die;
     private ArrayList <Player> player;
-    private Square[] square;
- 
+    Board board;
 public MonopolyGame(String args[]){
-    startGame(args);
+    Board board = new Board();
+    board.createBoard();
+    this.board=board;
+    createDies();
+    createPlayers(args);
+
 }    
-   private void startGame(String args[]){
 
-createSquares();
-       createDies();
-       createPlayers(args);
-
-playGame();
-
-   }
-  private void playGame(){
-while(!checkGameEnd()){
+  public void play(){
+while(!checkGameEnd() &&cycleCount<1000){
     Iterator itr = this.player.iterator();
     while (itr.hasNext()){
         Player person= (Player) itr.next();
-        int diceSums=1;
-        if(person.getAccount()>0){
-            diceSums=person.getDie()[0].toss()+person.getDie()[1].toss();
-        }
-      if(diceSums>=1){
-          person.setSquare(square[(person.getSquare().getNumber()+diceSums)%40]);
-      }
+        person.incrementTurnCounter();
+        person.playerTurn(this.board,this);
+
     }
+
+    this.cycleCount++; //??
 }
 
   }
-   private void createSquares(){
-    Square square[] = new Square[40];
 
-      for (int i=0;i<square.length;i++){
-          square[i] = new Square();
-          square[i].setNumber(i);
-      }
-       this.square=square;
-    
-   }
  private void createPlayers( String args[]){
      ArrayList <Player> player = new ArrayList<>(args.length);
      for(int i=0;i<args.length;i++){
          player.add(new Player(args[i],this.die));
-     player.get(i).setSquare(square[0]);}
+     player.get(i).setSquare(board.getSquare()[0]);}
      this.player=player;
  }
   private void createDies(){
@@ -69,4 +55,9 @@ while(!checkGameEnd()){
         return false;
     return true;
   }
+
+    public int getCycleCount() {
+        return cycleCount;
+    }
+
 }
