@@ -1,4 +1,5 @@
 public class Square {
+    int tax;
     private int index;
     private String name;
     private String message;
@@ -11,7 +12,13 @@ Square(int index,String name){
         return index;
     }
 
+    public int getTax() {
+        return tax;
+    }
 
+    public void setTax(int tax) {
+        this.tax = tax;
+    }
 
     public Player getOwner() {
         return owner;

@@ -33,10 +33,16 @@ public void playerTurn(Board board,MonopolyGame mgame ){
     if(diceSums>=1){
         this.setSquare(board.getSquare()[(this.getSquare().getIndex()+diceSums)%40]);
     }
+    if(this.square.getMessage()!=null &&this.square.getMessage().equals("Tax square"))
+        this.payTax();
     printPlayerInfo(mgame);
 }
+public void payTax(){
+    this.account=this.account-this.square.getTax();
+}
+
 public void printPlayerInfo(MonopolyGame mgame){
-    System.out.println("Player name : " +this.name + " Player turn counter : " + this.turnCounter +" Cycle counter"+ mgame.getCycleCount()+" Player location : "+ this.square.getName() );
+    System.out.println("Player name : " +this.name + " Player balance : "+ this.account +" Player turn counter : " + this.turnCounter +" Cycle counter"+ mgame.getCycleCount()+" Player location : "+ this.square.getName() );
 }
     public String getName() {
         return name;

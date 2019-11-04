@@ -9,6 +9,7 @@ public class MonopolyGame {
 public MonopolyGame(String args[],int taxSquareNumber,int taxAmount){
     Board board = new Board();
     board.createBoard();
+    board.arrangeTaxSquares(taxSquareNumber,taxAmount);
     this.board=board;
     createDies();
     createPlayers(args);
@@ -16,17 +17,18 @@ public MonopolyGame(String args[],int taxSquareNumber,int taxAmount){
 }    
 
   public void play(){
-while(!checkGameEnd() &&cycleCount<1000){
+do{
     Iterator itr = this.player.iterator();
     while (itr.hasNext()){
         Player person= (Player) itr.next();
-        person.incrementTurnCounter();
-        person.playerTurn(this.board,this);
-
+        if(person.getAccount()>0) {
+            person.incrementTurnCounter();
+            person.playerTurn(this.board, this);
+        }
     }
 
     this.cycleCount++; //??
-}
+}while(!checkGameEnd());
 
   }
 
@@ -48,7 +50,7 @@ while(!checkGameEnd() &&cycleCount<1000){
       int i=0;
     while (itr.hasNext()){
        Player person= (Player) itr.next();
-        if(person.getAccount()>=0)
+        if(person.getAccount()>0)
             i++;
     }
     if(i>=2)

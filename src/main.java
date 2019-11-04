@@ -25,8 +25,10 @@ for(int i=1;i<totalPlayer+1;i++){
    users[i-1]=split[i];
 
 }
+
 int taxSquareNumber = Integer.parseInt(split[totalPlayer+1]);
     int taxAmount = Integer.parseInt(split[totalPlayer+2]);
+
 
     MonopolyGame monopolyGame = new MonopolyGame(users,taxSquareNumber,taxAmount);
     monopolyGame.play();

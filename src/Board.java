@@ -5,6 +5,7 @@ public class Board {
         return square;
     }
     public void createBoard(){
+
         Square square[] = new Square[40];
 
         for (int i=0;i<square.length;i++){
@@ -13,5 +14,13 @@ public class Board {
         }
         this.square=square;
 
+    }
+    public void arrangeTaxSquares(int taxSquaresNumber,int tax){
+        if(taxSquaresNumber!=0){
+            int squareIndex = (int)(Math.random()*40);
+            this.square[squareIndex].setMessage("Tax square");
+            this.square[squareIndex].setTax(tax);
+            arrangeTaxSquares(taxSquaresNumber-1,tax);
+        }
     }
 }
