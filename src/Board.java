@@ -10,6 +10,7 @@ public class Board {
 
         for (int i=0;i<square.length;i++){
             square[i] = new Square(i,"Square "+i);
+            square[i].setMessage("Normal");
 
         }
         this.square=square;
