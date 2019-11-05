@@ -32,7 +32,6 @@ public void playerTurn(Board board,MonopolyGame mgame ){
     }
     if(diceSums>=1){
         this.setSquare(board.getSquare()[(this.getSquare().getIndex()+diceSums)%40]);
-        this.square.setOwner(this);
     }
     if(this.square.getMessage()!=null &&this.square.getMessage().equals("Tax square"))
         this.payTax();
@@ -48,16 +47,8 @@ public void printPlayerInfo(MonopolyGame mgame){
             " Cycle counter "+ mgame.getCycleCount()+" Player location : "+ this.square.getName() +
             " Square type : " +this.square.getMessage() ;
     if(this.square.getMessage().equals("Tax square")){
-        output+=" Tax amount " + this.square.getTax();
+        output+=" Tax amount " + ((IncomeTaxSquare)this.square).getTax();
     }
-    if(this.square.getOwner()!=null){
-
-        output+=" Square owner : " + this.square.getOwner().getName();
-    }
-    else
-        output+=" Square owner : None";
-    System.out.println(  output
-    );
 }
     public String getName() {
         return name;

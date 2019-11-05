@@ -1,44 +1,11 @@
-public class Square {
-    int tax;
-    private int index;
-    private String name;
-    private String message;
-private Player owner;
-Square(int index,String name){
-    this.index=index;
-    this.name=name;
-}
-    public int getIndex() {
-        return index;
+public abstract class Square {
+    Square (){
     }
+    public abstract int getIndex();
 
-    public int getTax() {
-        return tax;
-    }
+    public abstract String getName();
+    public abstract String getMessage();
 
-    public void setTax(int tax) {
-        this.tax = tax;
-    }
-
-    public Player getOwner() {
-        return owner;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setOwner(Player owner) {
-        this.owner = owner;
-    }
-
-    public String getMessage() {
-        return message;
-    }
-
-    public void setMessage(String message) {
-        this.message = message;
-    }
 
 }
 
