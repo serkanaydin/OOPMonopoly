@@ -5,7 +5,7 @@ public class MonopolyGame {
     private int cycleCount;
     private Die[] die;
     private ArrayList <Player> player;
-    Board board;
+    private Board board;
 public MonopolyGame(String args[],int taxSquareNumber,int taxAmount){
     Board board = new Board();
     board.createBoard();
@@ -13,35 +13,25 @@ public MonopolyGame(String args[],int taxSquareNumber,int taxAmount){
     this.board=board;
     createDies();
     createPlayers(args);
-
-}    
-
+}
   public void play(){
 do{
     Iterator itr = this.player.iterator();
     while (itr.hasNext()){
         Player person= (Player) itr.next();
         if(person.getAccount()>0) {
-
             person.playerTurn(this.board, this);
         }
     }
-    main.print("\nCycle end informations\n-------------------------------------");
-
+    main.print("\nCycle end informations\n----------------------------------------");
     itr = this.player.iterator();
     this.cycleCount++;
-
     while (itr.hasNext()){
         Player person= (Player) itr.next();
-
-
-            person.printPlayerInfo(this);
-
+        person.printPlayerInfo(this);
     }
-
     main.print("----------------------------------------");
 }while(!checkGameEnd());
-
   }
 
  private void createPlayers( String args[]){
@@ -67,9 +57,7 @@ do{
     }
     return (i<2);
   }
-
     public int getCycleCount() {
         return this.cycleCount;
     }
-
 }

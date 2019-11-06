@@ -57,7 +57,7 @@ public void printPlayerInfo(MonopolyGame mgame){
   main.print(output);
 }
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public void setAccount(int account) {
@@ -66,7 +66,7 @@ public void printPlayerInfo(MonopolyGame mgame){
 
 
     public Square getSquare() {
-        return square;
+        return this.square;
     }
 
 
@@ -76,7 +76,7 @@ public void printPlayerInfo(MonopolyGame mgame){
     }
 
     public Die[] getDie() {
-        return die;
+        return this.die;
     }
 
     public int getAccount() {
@@ -84,7 +84,7 @@ public void printPlayerInfo(MonopolyGame mgame){
     }
 
     public int getTurnCounter() {
-        return turnCounter;
+        return this.turnCounter;
     }
 
 

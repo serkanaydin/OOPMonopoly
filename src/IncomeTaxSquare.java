@@ -1,5 +1,5 @@
 public class IncomeTaxSquare extends Square {
-    int tax;
+    private int tax;
     private int index;
     private String name;
     IncomeTaxSquare(int index,String name,int tax){
@@ -10,15 +10,10 @@ public class IncomeTaxSquare extends Square {
     public int getIndex() {
         return this.index;
     }
-
     public int getTax() {
         return this.tax;
     }
-
-
     public String getName() {
-        return name;
+        return this.name;
     }
-
-
 }
