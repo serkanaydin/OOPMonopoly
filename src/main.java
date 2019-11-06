@@ -17,14 +17,14 @@ try{
         System.out.println("Total player number must be between 2 and 8");
         System.exit(1);
     }
-    String[] users =new String[totalPlayer];
-for(int i=1;i<totalPlayer+1;i++){
+    String[] users =new String[totalPlayer+1];
+for(int i=1;i<totalPlayer+2;i++){
    users[i-1]=args[i];
 
 }
 
-int taxSquareNumber = Integer.parseInt(args[totalPlayer+1]);
-    int taxAmount = Integer.parseInt(args[totalPlayer+2]);
+int taxSquareNumber = Integer.parseInt(args[totalPlayer+2]);
+    int taxAmount = Integer.parseInt(args[totalPlayer+3]);
 
     MonopolyGame monopolyGame = new MonopolyGame(users,taxSquareNumber,taxAmount);
     monopolyGame.play();

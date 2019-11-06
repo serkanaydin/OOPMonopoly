@@ -6,11 +6,11 @@ public class Player {
     private Die[] die;
 
 
-Player(String name,Die[] die){
+Player(String name,Die[] die,int balance){
     this.turnCounter=0;
     this.name=name;
     this.die=die;
-    this.account=500;
+    this.account=balance;
 
 }
 

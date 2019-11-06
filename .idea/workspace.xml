@@ -3,11 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="4da06b6c-c115-4900-ae9d-2773bac007c8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IncomeTaxSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IncomeTaxSquare.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MonopolyGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MonopolyGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RegularSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RegularSquare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,6 +14,32 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/serkan-master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
         <option value="SERKAN &lt;serkan-aydin@msn.com&gt;" />
@@ -44,7 +68,7 @@
     <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main" />
       <module name="object-oriented-programming---project" />
-      <option name="PROGRAM_PARAMETERS" value="3 serkan egemen tarkan 4 100" />
+      <option name="PROGRAM_PARAMETERS" value="3 serkan egemen tarkan 1000 4 100" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -65,7 +89,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1573051578788</updated>
-      <workItem from="1573051581350" duration="2704000" />
+      <workItem from="1573051581350" duration="4356000" />
     </task>
     <task id="LOCAL-00001" summary="gitlab error test">
       <created>1573051894796</created>
@@ -81,7 +105,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573053673622</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="some fixes and updates">
+      <created>1573055487722</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1573055487722</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -101,6 +132,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="gitlab error test" />
     <MESSAGE value="cycle-end prints were arranged" />
-    <option name="LAST_COMMIT_MESSAGE" value="cycle-end prints were arranged" />
+    <MESSAGE value="some fixes and updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="some fixes and updates" />
   </component>
 </project>
