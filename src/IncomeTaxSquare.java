@@ -9,11 +9,11 @@ public class IncomeTaxSquare extends Square {
         this.name=name;
     }
     public int getIndex() {
-        return index;
+        return this.index;
     }
 
     public int getTax() {
-        return tax;
+        return this.tax;
     }
 
 
@@ -22,7 +22,7 @@ public class IncomeTaxSquare extends Square {
     }
 
     public String getMessage() {
-        return message;
+        return this.message;
     }
     public void setMessage(String message) {
         this.message = message;

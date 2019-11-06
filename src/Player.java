@@ -33,22 +33,28 @@ public void playerTurn(Board board,MonopolyGame mgame ){
     if(diceSums>=1){
         this.setSquare(board.getSquare()[(this.getSquare().getIndex()+diceSums)%40]);
     }
-    if(this.square.getMessage()!=null &&this.square.getMessage().equals("Tax square"))
+    if(this.square instanceof IncomeTaxSquare)
         this.payTax();
     printPlayerInfo(mgame);
 }
 public void payTax(){
-    this.account=this.account-this.square.getTax();
+    this.account=this.account-((IncomeTaxSquare)(this.square)).getTax();
 }
 
 public void printPlayerInfo(MonopolyGame mgame){
     String output="Player name : " +this.name  +" Player balance : "+
             this.account +" Player turn counter : " + this.turnCounter +
             " Cycle counter "+ mgame.getCycleCount()+" Player location : "+ this.square.getName() +
-            " Square type : " +this.square.getMessage() ;
-    if(this.square.getMessage().equals("Tax square")){
-        output+=" Tax amount " + ((IncomeTaxSquare)this.square).getTax();
+            " Square type : " ;
+    if(this.square instanceof  RegularSquare){
+        output+=" Regular Square ";
+
     }
+    else if(this.square instanceof IncomeTaxSquare){
+        output+=" Tax square  Tax amount " + ((IncomeTaxSquare)this.square).getTax();
+    }
+
+  main.print(output);
 }
     public String getName() {
         return name;
