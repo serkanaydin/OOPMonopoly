@@ -44,14 +44,13 @@ public void payTax(){
 public void printPlayerInfo(MonopolyGame mgame){
     String output="Player name : " +this.name  +" Player balance : "+
             this.account +" Player turn counter : " + this.turnCounter +
-            " Cycle counter "+ mgame.getCycleCount()+" Player location : "+ this.square.getName() +
-            " Square type : " ;
+            " Cycle counter "+ mgame.getCycleCount() ;
     if(this.square instanceof  RegularSquare){
-        output+=" Regular Square ";
+        output+=" Player location : "+ this.square.getName()+" Square type :  Regular Square ";
 
     }
-    else if(this.square instanceof IncomeTaxSquare){
-        output+=" Tax square  Tax amount " + ((IncomeTaxSquare)this.square).getTax();
+    else if(this.square instanceof IncomeTaxSquare && !this.lostControl()){
+        output+=" Player location : "+ this.square.getName() +" Square type :  Tax square  Tax amount " + ((IncomeTaxSquare)this.square).getTax();
     }
 
   main.print(output);

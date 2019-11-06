@@ -26,7 +26,17 @@ do{
             person.playerTurn(this.board, this);
         }
     }
+    main.print("Cycle end informations\n-------------------------------------");
 
+    itr = this.player.iterator();
+    while (itr.hasNext()){
+        Player person= (Player) itr.next();
+
+
+            person.printPlayerInfo(this);
+
+    }
+    main.print("----------------------------------------");
     this.cycleCount++; //??
 }while(!checkGameEnd());
 
