@@ -29,6 +29,7 @@ public void playerTurn(Board board,MonopolyGame mgame ){
         int dice1=this.getDie()[0].toss();
         int dice2=this.getDie()[1].toss();
         diceSums= dice1+dice2;
+       this.incrementTurnCounter();
     }
     if(diceSums>=1){
         this.setSquare(board.getSquare()[(this.getSquare().getIndex()+diceSums)%40]);

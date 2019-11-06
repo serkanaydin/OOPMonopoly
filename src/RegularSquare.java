@@ -9,9 +9,7 @@ public class RegularSquare extends Square{
     public int getIndex() {
         return this.index;
     }
-    public  String getMessage(){
-        return this.name;
-    };
+
 
 
     public String getName() {

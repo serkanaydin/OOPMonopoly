@@ -22,13 +22,15 @@ do{
     while (itr.hasNext()){
         Player person= (Player) itr.next();
         if(person.getAccount()>0) {
-            person.incrementTurnCounter();
+
             person.playerTurn(this.board, this);
         }
     }
     main.print("Cycle end informations\n-------------------------------------");
 
     itr = this.player.iterator();
+    this.cycleCount++;
+
     while (itr.hasNext()){
         Player person= (Player) itr.next();
 
@@ -36,8 +38,8 @@ do{
             person.printPlayerInfo(this);
 
     }
+
     main.print("----------------------------------------");
-    this.cycleCount++; //??
 }while(!checkGameEnd());
 
   }

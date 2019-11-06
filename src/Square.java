@@ -4,7 +4,7 @@ public abstract class Square {
     public abstract int getIndex();
 
     public abstract String getName();
-    public abstract String getMessage();
+
 
 
 }
