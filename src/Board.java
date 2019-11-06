@@ -14,6 +14,8 @@ public class Board {
     public void arrangeTaxSquares(int taxSquaresNumber,int tax){
         if(taxSquaresNumber!=0){
             int squareIndex = (int)(Math.random()*40);
+            while(this.square[squareIndex] instanceof IncomeTaxSquare)
+                squareIndex = (int)(Math.random()*40);
             this.square[squareIndex]=new IncomeTaxSquare(squareIndex,"Tax Square " + squareIndex,tax);
             arrangeTaxSquares(taxSquaresNumber-1,tax);
         }
