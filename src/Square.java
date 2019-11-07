@@ -1,11 +1,6 @@
 public abstract class Square {
-    Square (){
-    }
+    Square (){ }
     public abstract int getIndex();
-
     public abstract String getName();
-    public abstract String getMessage();
-
-
 }
 
