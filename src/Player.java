@@ -6,11 +6,11 @@ public class Player {
     private Die[] die;
 
 
-Player(String name,Die[] die){
+Player(String name,Die[] die,int balance){
     this.turnCounter=0;
     this.name=name;
     this.die=die;
-    this.account=500;
+    this.account=balance;
 
 }
 
@@ -29,6 +29,7 @@ public void playerTurn(Board board,MonopolyGame mgame ){
         int dice1=this.getDie()[0].toss();
         int dice2=this.getDie()[1].toss();
         diceSums= dice1+dice2;
+       this.incrementTurnCounter();
     }
     if(diceSums>=1){
         this.setSquare(board.getSquare()[(this.getSquare().getIndex()+diceSums)%40]);
@@ -44,20 +45,19 @@ public void payTax(){
 public void printPlayerInfo(MonopolyGame mgame){
     String output="Player name : " +this.name  +" Player balance : "+
             this.account +" Player turn counter : " + this.turnCounter +
-            " Cycle counter "+ mgame.getCycleCount()+" Player location : "+ this.square.getName() +
-            " Square type : " ;
+            " Cycle counter "+ mgame.getCycleCount() ;
     if(this.square instanceof  RegularSquare){
-        output+=" Regular Square ";
+        output+=" Player location : "+ this.square.getName()+" Square type :  Regular Square ";
 
     }
-    else if(this.square instanceof IncomeTaxSquare){
-        output+=" Tax square  Tax amount " + ((IncomeTaxSquare)this.square).getTax();
+    else if(this.square instanceof IncomeTaxSquare && !this.lostControl()){
+        output+=" Player location : "+ this.square.getName() +" Square type :  Tax square  Tax amount " + ((IncomeTaxSquare)this.square).getTax();
     }
 
   main.print(output);
 }
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public void setAccount(int account) {
@@ -66,7 +66,7 @@ public void printPlayerInfo(MonopolyGame mgame){
 
 
     public Square getSquare() {
-        return square;
+        return this.square;
     }
 
 
@@ -76,7 +76,7 @@ public void printPlayerInfo(MonopolyGame mgame){
     }
 
     public Die[] getDie() {
-        return die;
+        return this.die;
     }
 
     public int getAccount() {
@@ -84,7 +84,7 @@ public void printPlayerInfo(MonopolyGame mgame){
     }
 
     public int getTurnCounter() {
-        return turnCounter;
+        return this.turnCounter;
     }
 
 

@@ -5,7 +5,7 @@ public class MonopolyGame {
     private int cycleCount;
     private Die[] die;
     private ArrayList <Player> player;
-    Board board;
+    private Board board;
 public MonopolyGame(String args[],int taxSquareNumber,int taxAmount){
     Board board = new Board();
     board.createBoard();
@@ -13,29 +13,31 @@ public MonopolyGame(String args[],int taxSquareNumber,int taxAmount){
     this.board=board;
     createDies();
     createPlayers(args);
-
-}    
-
+}
   public void play(){
 do{
     Iterator itr = this.player.iterator();
     while (itr.hasNext()){
         Player person= (Player) itr.next();
         if(person.getAccount()>0) {
-            person.incrementTurnCounter();
             person.playerTurn(this.board, this);
         }
     }
-
-    this.cycleCount++; //??
+    main.print("\nCycle end informations\n----------------------------------------");
+    itr = this.player.iterator();
+    this.cycleCount++;
+    while (itr.hasNext()){
+        Player person= (Player) itr.next();
+        person.printPlayerInfo(this);
+    }
+    main.print("----------------------------------------");
 }while(!checkGameEnd());
-
   }
 
  private void createPlayers( String args[]){
      ArrayList <Player> player = new ArrayList<>(args.length);
-     for(int i=0;i<args.length;i++){
-         player.add(new Player(args[i],this.die));
+     for(int i=0;i<args.length-1;i++){
+         player.add(new Player(args[i],this.die,Integer.parseInt(args[args.length-1])));
      player.get(i).setSquare(board.getSquare()[0]);}
      this.player=player;
  }
@@ -53,13 +55,9 @@ do{
         if(person.getAccount()>0)
             i++;
     }
-    if(i>=2)
-        return false;
-    return true;
+    return (i<2);
   }
-
     public int getCycleCount() {
-        return cycleCount;
+        return this.cycleCount;
     }
-
 }
