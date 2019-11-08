@@ -40,4 +40,3 @@ public class main {
         System.out.println(output);
     }
 }
-

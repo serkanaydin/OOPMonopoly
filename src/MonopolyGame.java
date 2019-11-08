@@ -28,7 +28,7 @@ do{
     this.cycleCount++;
     while (itr.hasNext()){
         Player person= (Player) itr.next();
-        person.printPlayerInfo(this);
+        person.printPlayerInfo(this,"\n");
     }
     main.print("----------------------------------------");
 }while(!checkGameEnd());
