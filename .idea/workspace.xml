@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4da06b6c-c115-4900-ae9d-2773bac007c8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +68,7 @@
     <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main" />
       <module name="object-oriented-programming---project" />
-      <option name="PROGRAM_PARAMETERS" value="3 serkan egemen tarkan 1500 10 100" />
+      <option name="PROGRAM_PARAMETERS" value="3  serkan egemen tarkan 900 4 30" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -88,7 +89,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1573051578788</updated>
-      <workItem from="1573051581350" duration="5761000" />
+      <workItem from="1573051581350" duration="6126000" />
+      <workItem from="1573126420175" duration="2299000" />
+      <workItem from="1573144701811" duration="117000" />
+      <workItem from="1573197817256" duration="775000" />
     </task>
     <task id="LOCAL-00001" summary="gitlab error test">
       <created>1573051894796</created>
@@ -125,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573062743227</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="same index tax square problem caused by same random number solved  21.19">
+      <created>1573063781077</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1573063781077</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,7 +147,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -148,6 +161,7 @@
     <MESSAGE value="some fixes and updates" />
     <MESSAGE value="some fixes and updates 20:41" />
     <MESSAGE value="some fixes and updates 20:52" />
-    <option name="LAST_COMMIT_MESSAGE" value="some fixes and updates 20:52" />
+    <MESSAGE value="same index tax square problem caused by same random number solved  21.19" />
+    <option name="LAST_COMMIT_MESSAGE" value="same index tax square problem caused by same random number solved  21.19" />
   </component>
 </project>
