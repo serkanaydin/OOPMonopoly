@@ -1,23 +1,55 @@
 public class Board {
     private Square[] square;
-
+public Board(int taxSquareNumber,int taxAmount,int jailSquareAmount){
+    arrangeGoSquare();
+    arrangeTaxSquares(taxSquareNumber,taxAmount);
+    arrangeJailSquares(jailSquareAmount);
+    arrangeRegularSquares();
+}
     public Square[] getSquare() {
         return this.square;
     }
-    public void createBoard(){
+    public void arrangeGoSquare(){
         Square square[] = new Square[40];
-        for (int i=0;i<square.length;i++){
-            square[i] = new RegularSquare(i,"Square "+i);
-        }
+
+                square[0]= new GoSquare();
+                square[0].setIndex(0);
         this.square=square;
+
     }
     public void arrangeTaxSquares(int taxSquaresNumber,int tax){
         if(taxSquaresNumber!=0){
             int squareIndex = (int)(Math.random()*40);
-            while(this.square[squareIndex] instanceof IncomeTaxSquare)
+            while(square[squareIndex]!=null)
                 squareIndex = (int)(Math.random()*40);
-            this.square[squareIndex]=new IncomeTaxSquare(squareIndex,"Tax Square " + squareIndex,tax);
+            this.square[squareIndex]=new IncomeTaxSquare(tax);
             arrangeTaxSquares(taxSquaresNumber-1,tax);
+        }
+    }
+    public void arrangeJailSquares(int jailSquaresNumber){
+        if(jailSquaresNumber!=0){
+            int index = (int)(Math.random()*40);
+
+            while(square[index]!=null){
+                index = (int)(Math.random()*40);
+            }
+
+            this.square[index]= new GoToJailSquare();
+            this.square[index].setName("JailSquare");
+            this.square[index].setIndex(index);
+
+            arrangeJailSquares(jailSquaresNumber-1);
+        }
+    }
+    public void arrangeRegularSquares(){
+        int k=0;
+        for(int i=0 ;i<this.square.length;i++){
+            if(square[i]==null){
+                square[i] = new RegularSquare();
+                square[i].setIndex(i);
+                square[i].setName("RegularSquare"+ k);
+                k++;
+            }
         }
     }
 }

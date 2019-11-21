@@ -1,6 +1,22 @@
-public abstract class Square {
+public abstract class
+Square {
+   private int index;
+    private String name;
     Square (){ }
-    public abstract int getIndex();
-    public abstract String getName();
+    public int getIndex(){
+        return this.index;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public  String getName(){
+        return this.name;
+    }
+    public void setIndex(int index){
+        this.index=index;
+    }
+    public abstract void landedOn();
 }
 

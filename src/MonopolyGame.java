@@ -6,10 +6,8 @@ public class MonopolyGame {
     private Die[] die;
     private ArrayList <Player> player;
     private Board board;
-public MonopolyGame(String args[],int taxSquareNumber,int taxAmount){
-    Board board = new Board();
-    board.createBoard();
-    board.arrangeTaxSquares(taxSquareNumber,taxAmount);
+public MonopolyGame(String args[],int taxSquareNumber,int taxAmount,int jailAmount){
+    Board board = new Board(taxSquareNumber,taxAmount,jailAmount);
     this.board=board;
     createDies();
     createPlayers(args);
