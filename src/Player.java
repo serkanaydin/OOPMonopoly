@@ -24,6 +24,7 @@ Player(String name,Die[] die,int balance){
     }
 public void playerTurn(Board board,MonopolyGame mgame ){
     printPlayerInfo(mgame,"");
+    this.square.printSquareInfo();
    int diceSums=0;
    int dice1=0;
    int dice2=0;
@@ -34,31 +35,21 @@ public void playerTurn(Board board,MonopolyGame mgame ){
        this.incrementTurnCounter();
     }
     if(diceSums>=1){
-        String output="Turn player : "+ this.name +" Dice 1 face value : " + dice1 + " Dice 2 face value : " + dice2 + " Total value : " + diceSums;
-        main.print(output);
+       /* String output="Turn player : "+ this.name +" Dice 1 face value : " + dice1 + " Dice 2 face value : " + dice2 + " Total value : " + diceSums;
+        main.print(output);*/
+        printPlayerInfo(mgame,"\n");
+
         this.setSquare(board.getSquare()[(this.getSquare().getIndex()+diceSums)%40]);
     }
-    if(this.square instanceof IncomeTaxSquare)
-        this.payTax();
-    printPlayerInfo(mgame,"\n");
+    this.square.landedOn(this);
 }
-public void payTax(){
-    this.account=this.account-((IncomeTaxSquare)(this.square)).getTax();
-}
-
 public void printPlayerInfo(MonopolyGame mgame,String n){
     String output="Player name : " +this.name  +" Player balance : "+
             this.account +" Player turn counter : " + this.turnCounter +
             " Cycle counter "+ mgame.getCycleCount() ;
-    if(this.square instanceof  RegularSquare){
-        output+=" Player location : "+ this.square.getName()+" Square type :  Regular Square ";
+    System.out.println(output);
 
-    }
-    else if(this.square instanceof IncomeTaxSquare && !this.lostControl()){
-        output+=" Player location : "+ this.square.getName() +" Square type :  Tax square  Tax amount " + ((IncomeTaxSquare)this.square).getTax();
-    }
-output+=n;
-  main.print(output);
+
 }
     public String getName() {
         return this.name;

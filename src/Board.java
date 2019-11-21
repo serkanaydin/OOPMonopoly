@@ -14,6 +14,8 @@ public Board(int taxSquareNumber,int taxAmount,int jailSquareAmount){
 
                 square[0]= new GoSquare();
                 square[0].setIndex(0);
+square[0].setName("Go Square");
+
         this.square=square;
 
     }
@@ -23,6 +25,8 @@ public Board(int taxSquareNumber,int taxAmount,int jailSquareAmount){
             while(square[squareIndex]!=null)
                 squareIndex = (int)(Math.random()*40);
             this.square[squareIndex]=new IncomeTaxSquare(tax);
+            this.square[squareIndex].setName("Tax Square");
+            this.square[squareIndex].setIndex(squareIndex);
             arrangeTaxSquares(taxSquaresNumber-1,tax);
         }
     }

@@ -1,8 +1,3 @@
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.sql.SQLOutput;
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class main {
@@ -18,7 +13,6 @@ public class main {
         if((totalPlayer < 2 || totalPlayer > 8) && totalPlayer!= (args.length - 5)){
             System.out.println("Total player number must be between 2 and 8");
         }
-        System.out.println("Please enter your input again.Number of player will be in range 2 - 8");
         Scanner input = new Scanner(System.in);
         while((totalPlayer < 2 || totalPlayer > 8) || totalPlayer!= (args.length - 5)){
             totalPlayer = input.nextInt();

@@ -17,6 +17,7 @@ Square {
     public void setIndex(int index){
         this.index=index;
     }
-    public abstract void landedOn();
+    public abstract void landedOn(Player player);
+    public abstract void printSquareInfo();
 }
 
