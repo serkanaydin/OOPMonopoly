@@ -38,7 +38,7 @@ public void playerTurn(Board board,MonopolyGame mgame ){
        /* String output="Turn player : "+ this.name +" Dice 1 face value : " + dice1 + " Dice 2 face value : " + dice2 + " Total value : " + diceSums;
         main.print(output);*/
         printPlayerInfo(mgame,"\n");
-
+if(!(this.square instanceof GoToJailSquare ) || dice1==dice2)
         this.setSquare(board.getSquare()[(this.getSquare().getIndex()+diceSums)%40]);
     }
     this.square.landedOn(this);

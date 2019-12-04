@@ -1,7 +1,7 @@
 public class Board {
     private Square[] square;
-public Board(int taxSquareNumber,int taxAmount,int jailSquareAmount){
-    arrangeGoSquare();
+public Board(int taxSquareNumber,int taxAmount,int jailSquareAmount,int goSquarePlus){
+    arrangeGoSquare(goSquarePlus);
     arrangeTaxSquares(taxSquareNumber,taxAmount);
     arrangeJailSquares(jailSquareAmount);
     arrangeRegularSquares();
@@ -9,10 +9,10 @@ public Board(int taxSquareNumber,int taxAmount,int jailSquareAmount){
     public Square[] getSquare() {
         return this.square;
     }
-    public void arrangeGoSquare(){
+    public void arrangeGoSquare(int goSquarePlus){
         Square square[] = new Square[40];
 
-                square[0]= new GoSquare();
+                square[0]= new GoSquare(goSquarePlus);
                 square[0].setIndex(0);
 square[0].setName("Go Square");
 

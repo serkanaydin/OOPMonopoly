@@ -1,5 +1,10 @@
 public class GoSquare extends Square{
-    public void landedOn(Player play){
+  private int amount;
+  GoSquare(int amount){
+      this.amount=amount;
+  }
+    public void landedOn(Player player){
+      player.setAccount(player.getAccount()+this.amount);
 printSquareInfo();
     }
     public void printSquareInfo(){
