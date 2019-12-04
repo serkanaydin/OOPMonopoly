@@ -1,7 +1,10 @@
 public class PurchasableSquare extends Square {
     private Player owner;
     private int price;
-    @Override
+
+ PurchasableSquare(int price){
+        this.price=price;
+    }
     public void landedOn(Player player) {
         printSquareInfo();
         tryPurchase(player);
@@ -26,6 +29,7 @@ public class PurchasableSquare extends Square {
    private void completePurchase(Player p){
         p.setAccount(p.getAccount()-this.price);
         setOwner(p);
+        p.addOwnedSquare(this);
    }
    public Player getOwner(){
         return this.owner;
@@ -38,5 +42,9 @@ public class PurchasableSquare extends Square {
 
     public void setOwner(Player owner) {
         this.owner = owner;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
     }
 }

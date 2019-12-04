@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4da06b6c-c115-4900-ae9d-2773bac007c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Piece.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/PurchasableSquare.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GoSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GoSquare.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MonopolyGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MonopolyGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PurchasableSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PurchasableSquare.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -99,7 +97,7 @@
     <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main" />
       <module name="object-oriented-programming---project" />
-      <option name="PROGRAM_PARAMETERS" value="3  serkan egemen tarkan 1000 4 200 2 100" />
+      <option name="PROGRAM_PARAMETERS" value="3  serkan egemen tarkan 1000 4 200 2 100 2 300" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -135,7 +133,7 @@
       <workItem from="1574943923658" duration="148000" />
       <workItem from="1575233726365" duration="525000" />
       <workItem from="1575462793281" duration="2500000" />
-      <workItem from="1575483881732" duration="2462000" />
+      <workItem from="1575483881732" duration="3342000" />
     </task>
     <task id="LOCAL-00001" summary="gitlab error test">
       <created>1573051894796</created>
@@ -193,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574363198362</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="update 22.50 4.12">
+      <created>1575489028069</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1575489028069</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,19 +226,20 @@
     <MESSAGE value="same index tax square problem caused by same random number solved  21.19" />
     <MESSAGE value="some bugs solved and dice value print added  10.39 8.11" />
     <MESSAGE value="update  22.06 8.11" />
-    <option name="LAST_COMMIT_MESSAGE" value="update  22.06 8.11" />
+    <MESSAGE value="update 22.50 4.12" />
+    <option name="LAST_COMMIT_MESSAGE" value="update 22.50 4.12" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main.java</url>
-          <line>29</line>
+          <line>31</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/Board.java</url>
-          <line>11</line>
+          <line>25</line>
           <properties class="Board" method="arrangeGoSquare">
             <option name="EMULATED" value="true" />
           </properties>

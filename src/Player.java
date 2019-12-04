@@ -1,12 +1,16 @@
+import java.util.ArrayList;
+
 public class Player {
     private int account;
     private int turnCounter;
     private Square square;
     private String name;
     private Die[] die;
+    private ArrayList<PurchasableSquare> ownerSquares;
 
 
 Player(String name,Die[] die,int balance){
+    this.ownerSquares = new ArrayList<PurchasableSquare>();
     this.turnCounter=0;
     this.name=name;
     this.die=die;
@@ -82,5 +86,7 @@ public void printPlayerInfo(MonopolyGame mgame,String n){
         return this.turnCounter;
     }
 
-
+public void addOwnedSquare(PurchasableSquare purchasable){
+    this.ownerSquares.add(purchasable);
+}
 }

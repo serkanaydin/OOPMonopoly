@@ -1,13 +1,28 @@
 public class Board {
     private Square[] square;
-public Board(int taxSquareNumber,int taxAmount,int jailSquareAmount,int goSquarePlus){
+public Board(int taxSquareNumber,int taxAmount,int jailSquareAmount,int goSquarePlus,int purchasableNumber,int purchasablePrice){
     arrangeGoSquare(goSquarePlus);
     arrangeTaxSquares(taxSquareNumber,taxAmount);
     arrangeJailSquares(jailSquareAmount);
+    arrangePurchasableSquares(purchasableNumber,purchasablePrice);
     arrangeRegularSquares();
 }
     public Square[] getSquare() {
         return this.square;
+    }
+    private void arrangePurchasableSquares(int purchasableNumber,int purchasablePrice){
+        if(purchasableNumber!=0){
+            int index = (int)(Math.random()*40);
+
+            while(square[index]!=null){
+                index = (int)(Math.random()*40);
+            }
+
+            this.square[index]= new PurchasableSquare(purchasablePrice);
+            this.square[index].setName("PurchasableSquare");
+            this.square[index].setIndex(index);
+            arrangeJailSquares(purchasableNumber-1);
+        }
     }
     public void arrangeGoSquare(int goSquarePlus){
         Square square[] = new Square[40];
