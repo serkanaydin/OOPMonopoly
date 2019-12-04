@@ -21,9 +21,15 @@ public class PurchasableSquare extends Square {
         if(random>5)
             acceptedBuy=true;
 
-        if(acceptedBuy && p.getAccount()>this.price && this.owner!=null)
+
+        if(acceptedBuy && p.getAccount()>this.price && this.owner==null)
             completePurchase(p);
-        else System.out.println("The square was not bought");
+        else {
+            System.out.println("The square was not bought");
+            if(this.owner!=null)
+            System.out.println("This square's owner is " + this.owner.getName());
+
+        }
 
     }
    private void completePurchase(Player p){
