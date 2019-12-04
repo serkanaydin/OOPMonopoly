@@ -1,19 +1,23 @@
 public class IncomeTaxSquare extends Square {
     private int tax;
-    private int index;
-    private String name;
-    IncomeTaxSquare(int index,String name,int tax){
+
+    IncomeTaxSquare(int tax){
         this.tax=tax;
-        this.index=index;
-        this.name=name;
     }
-    public int getIndex() {
-        return this.index;
-    }
+
     public int getTax() {
         return this.tax;
     }
-    public String getName() {
-        return this.name;
+    public void landedOn(Player player){
+
+        player.setAccount(player.getAccount()-this.getTax());
+        printSquareInfo();
+
     }
+public void printSquareInfo(){
+   String output=" Square type :  Tax square Square name : "+this.getName()+ " Tax amount " + this.tax;
+    System.out.println(output);
+
+}
+
 }

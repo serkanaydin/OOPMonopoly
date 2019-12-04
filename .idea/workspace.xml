@@ -2,15 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4da06b6c-c115-4900-ae9d-2773bac007c8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/object-oriented-programming---project.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <excluded-from-favorite>
@@ -41,6 +60,7 @@
     </favorite-branches>
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="SERKAN AYDIN &lt;serkan-aydin@msn.com&gt;" />
         <option value="SERKAN &lt;serkan-aydin@msn.com&gt;" />
         <option value="s" />
       </list>
@@ -49,8 +69,12 @@
   </component>
   <component name="ProjectId" id="1TFMqC6g8xfOuAk3UOKhs8srczk" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -68,7 +92,7 @@
     <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main" />
       <module name="object-oriented-programming---project" />
-      <option name="PROGRAM_PARAMETERS" value="3  serkan egemen tarkan 900 4 30" />
+      <option name="PROGRAM_PARAMETERS" value="3  serkan egemen tarkan 1000 4 200 2 100 2 300" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -92,7 +116,19 @@
       <workItem from="1573051581350" duration="6126000" />
       <workItem from="1573126420175" duration="2299000" />
       <workItem from="1573144701811" duration="117000" />
-      <workItem from="1573197817256" duration="775000" />
+      <workItem from="1573197817256" duration="1470000" />
+      <workItem from="1573199335493" duration="445000" />
+      <workItem from="1573199805455" duration="2353000" />
+      <workItem from="1573202291340" duration="4720000" />
+      <workItem from="1574013277455" duration="51000" />
+      <workItem from="1574335230841" duration="3327000" />
+      <workItem from="1574422572776" duration="285000" />
+      <workItem from="1574422896511" duration="1269000" />
+      <workItem from="1574500883468" duration="1452000" />
+      <workItem from="1574943923658" duration="148000" />
+      <workItem from="1575233726365" duration="525000" />
+      <workItem from="1575462793281" duration="2500000" />
+      <workItem from="1575483881732" duration="3740000" />
     </task>
     <task id="LOCAL-00001" summary="gitlab error test">
       <created>1573051894796</created>
@@ -136,7 +172,35 @@
       <option name="project" value="LOCAL" />
       <updated>1573063781077</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="some bugs solved and dice value print added  10.39 8.11">
+      <created>1573198812786</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1573198812786</updated>
+    </task>
+    <task id="LOCAL-00008" summary="update  22.06 8.11">
+      <created>1574363198362</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1574363198362</updated>
+    </task>
+    <task id="LOCAL-00009" summary="update 22.50 4.12">
+      <created>1575489028069</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1575489028069</updated>
+    </task>
+    <task id="LOCAL-00010" summary="update 23.07 4.12">
+      <created>1575490045466</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1575490045466</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +226,88 @@
     <MESSAGE value="some fixes and updates 20:41" />
     <MESSAGE value="some fixes and updates 20:52" />
     <MESSAGE value="same index tax square problem caused by same random number solved  21.19" />
-    <option name="LAST_COMMIT_MESSAGE" value="same index tax square problem caused by same random number solved  21.19" />
+    <MESSAGE value="some bugs solved and dice value print added  10.39 8.11" />
+    <MESSAGE value="update  22.06 8.11" />
+    <MESSAGE value="update 22.50 4.12" />
+    <MESSAGE value="update 23.07 4.12" />
+    <option name="LAST_COMMIT_MESSAGE" value="update 23.07 4.12" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Board.java</url>
+          <line>26</line>
+          <properties class="Board" method="arrangeGoSquare">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main.java</url>
+          <line>3</line>
+          <properties class="main" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="simpleUML.UMLToolWindowPlugin">
+    <General>
+      <option name="birdViewUpdateDelay" value="2000" />
+      <option name="knownFile0" value="file://$PROJECT_DIR$/../project.suml" />
+      <option name="defaultFileLocation" value="file://$PROJECT_DIR$/.." />
+    </General>
+    <Classdiagram>
+      <option name="diagramTitleFont" value="SansSerif,1,12" />
+      <option name="diagramFont" value="SansSerif,0,10" />
+      <option name="defaultFieldsExpanded" value="false" />
+      <option name="defaultContructorsExpanded" value="false" />
+      <option name="defaultMethodsExpanded" value="false" />
+      <option name="showParameters" value="true" />
+      <option name="showTooltip" value="true" />
+      <option name="showReturnValues" value="true" />
+      <option name="longModifier" value="true" />
+      <option name="implementsBehaviour" value="1" />
+      <option name="extendsBehaviour" value="1" />
+      <option name="compartmentBehaviour" value="1" />
+      <option name="interfaceBackgroundColor" value="-6494306" />
+      <option name="abstractClassBackgroundColor" value="-1580132" />
+      <option name="classBackgroundColor" value="-6508057" />
+      <option name="diagramBackgroundColor" value="-1" />
+      <option name="useAntialiasedConnectors" value="true" />
+      <option name="quickSourceLinkColor" value="-16776961" />
+      <option name="quickDiagramLinkColor" value="-8454144" />
+      <option name="drawDecorations" value="false" />
+      <option name="hideFieldList" value="" />
+      <option name="showFieldList" value="" />
+      <option name="hideConstructorList" value="" />
+      <option name="showConstructorList" value="" />
+      <option name="hideMethodList" value="" />
+      <option name="showMethodList" value="" />
+      <option name="minimumFigureSize" value="0,0" />
+    </Classdiagram>
+    <Dependencydiagram>
+      <option name="diagramTitleFont" value="SansSerif,1,12" />
+      <option name="diagramFont" value="SansSerif,0,10" />
+      <option name="diagramBackgroundColor" value="-1" />
+      <option name="useAntialiasedConnectors" value="true" />
+      <option name="packageNameCompressionLevel" value="0" />
+    </Dependencydiagram>
+    <Packagediagram>
+      <option name="diagramTitleFont" value="SansSerif,0,12" />
+      <option name="diagramFont" value="SansSerif,0,10" />
+      <option name="packageBackgroundColor" value="-4144960" />
+      <option name="diagramBackgroundColor" value="-1" />
+      <option name="useAntialiasedConnectors" value="true" />
+      <option name="packageNameCompressionLevel" value="2" />
+    </Packagediagram>
   </component>
 </project>
