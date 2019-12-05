@@ -1,12 +1,11 @@
 {
   "totalPlayer": 3,
   "user": [
-    "Serkan",
+    "Someone",
     "Egemen",
     "Tarkan",
     "1000"
   ],
-  "age": 30,
   "taxSquareNumber": 4,
   "taxAmount": 200,
   "jailNumber": 3,
