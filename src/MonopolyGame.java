@@ -21,14 +21,14 @@ do{
             person.playerTurn(this.board, this);
         }
     }
-    main.print("\nCycle end informations\n----------------------------------------");
+    System.out.println("\nCycle end informations\n----------------------------------------");
     itr = this.player.iterator();
     this.cycleCount++;
     while (itr.hasNext()){
         Player person= (Player) itr.next();
         person.printPlayerInfo(this,"\n");
     }
-    main.print("----------------------------------------");
+    System.out.println("----------------------------------------");
 }while(!checkGameEnd());
   }
 

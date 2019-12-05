@@ -24,7 +24,7 @@ public Board(int taxSquareNumber,int taxAmount,int jailSquareAmount,int goSquare
             arrangeJailSquares(purchasableNumber-1);
         }
     }
-    public void arrangeGoSquare(int goSquarePlus){
+    private void arrangeGoSquare(int goSquarePlus){
         Square square[] = new Square[40];
 
                 square[0]= new GoSquare(goSquarePlus);
@@ -34,7 +34,7 @@ square[0].setName("Go Square");
         this.square=square;
 
     }
-    public void arrangeTaxSquares(int taxSquaresNumber,int tax){
+    private void arrangeTaxSquares(int taxSquaresNumber,int tax){
         if(taxSquaresNumber!=0){
             int squareIndex = (int)(Math.random()*40);
             while(square[squareIndex]!=null)
@@ -45,7 +45,7 @@ square[0].setName("Go Square");
             arrangeTaxSquares(taxSquaresNumber-1,tax);
         }
     }
-    public void arrangeJailSquares(int jailSquaresNumber){
+    private void arrangeJailSquares(int jailSquaresNumber){
         if(jailSquaresNumber!=0){
             int index = (int)(Math.random()*40);
 
@@ -60,7 +60,7 @@ square[0].setName("Go Square");
             arrangeJailSquares(jailSquaresNumber-1);
         }
     }
-    public void arrangeRegularSquares(){
+    private void arrangeRegularSquares(){
         int k=0;
         for(int i=0 ;i<this.square.length;i++){
             if(square[i]==null){
