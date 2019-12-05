@@ -33,8 +33,5 @@ public class main {
     }
 
 
-    public static void  print(String output){
 
-        System.out.println(output);
-    }
 }

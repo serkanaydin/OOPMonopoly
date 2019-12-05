@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="4da06b6c-c115-4900-ae9d-2773bac007c8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PurchasableSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PurchasableSquare.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MonopolyGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MonopolyGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -129,7 +131,8 @@
       <workItem from="1574943923658" duration="148000" />
       <workItem from="1575233726365" duration="525000" />
       <workItem from="1575462793281" duration="2500000" />
-      <workItem from="1575483881732" duration="7037000" />
+      <workItem from="1575483881732" duration="7122000" />
+      <workItem from="1575555497785" duration="992000" />
     </task>
     <task id="LOCAL-00001" summary="gitlab error test">
       <created>1573051894796</created>
@@ -215,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575493266703</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="update">
+      <created>1575495479177</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1575495479177</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,7 +257,8 @@
     <MESSAGE value="update 23.07 4.12" />
     <MESSAGE value="iml files added to fix other developers's problem" />
     <MESSAGE value="last update test" />
-    <option name="LAST_COMMIT_MESSAGE" value="last update test" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
