@@ -25,9 +25,13 @@ public class PurchasableSquare extends Square {
         if(acceptedBuy && p.getAccount()>this.price && this.owner==null)
             completePurchase(p);
         else {
-            System.out.println("The square was not bought");
-            if(this.owner!=null)
-            System.out.println("This square's owner is " + this.owner.getName());
+            System.out.println("The building was not bought");
+            if(p.getAccount()>this.price &&acceptedBuy )
+                System.out.println("Player doesn't have enough money");
+            else if(!acceptedBuy)
+                System.out.println("Player didn't accepted buy");
+            else if(this.owner!=null)
+            System.out.println("This building's owner is " + this.owner.getName());
 
         }
 
