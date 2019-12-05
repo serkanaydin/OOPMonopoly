@@ -1,0 +1,21 @@
+{
+  "totalPlayer": 3,
+  "user": [
+    "Serkan",
+    "Egemen",
+    "Tarkan",
+    "1000"
+  ],
+  "age": 30,
+  "taxSquareNumber": 4,
+  "taxAmount": 200,
+  "jailNumber": 3,
+  "goSquareAmount": 200,
+  "purchasableNumber": 2,
+  "purchasablePrice": 300,
+  "cars": [
+    "Ford",
+    "BMW",
+    "Fiat"
+  ]
+}
