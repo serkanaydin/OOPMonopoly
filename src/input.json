@@ -12,10 +12,5 @@
   "jailNumber": 3,
   "goSquareAmount": 200,
   "purchasableNumber": 2,
-  "purchasablePrice": 300,
-  "cars": [
-    "Ford",
-    "BMW",
-    "Fiat"
-  ]
+  "purchasablePrice": 300
 }
