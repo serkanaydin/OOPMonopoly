@@ -146,7 +146,7 @@
       <workItem from="1575483881732" duration="7122000" />
       <workItem from="1575555497785" duration="9026000" />
       <workItem from="1575574974716" duration="2279000" />
-      <workItem from="1575643438268" duration="225000" />
+      <workItem from="1575643438268" duration="529000" />
     </task>
     <task id="LOCAL-00001" summary="gitlab error test">
       <created>1573051894796</created>
@@ -274,7 +274,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575577134732</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="purchasable square names are added.&#10;purchase operation fixed.&#10;loan fee added.">
+      <created>1575643951216</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1575643951216</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,7 +319,8 @@
     <MESSAGE value="update 22.18 5.12" />
     <MESSAGE value="json file edited" />
     <MESSAGE value="23.18 started sketch uml diagrams" />
-    <option name="LAST_COMMIT_MESSAGE" value="23.18 started sketch uml diagrams" />
+    <MESSAGE value="purchasable square names are added.&#10;purchase operation fixed.&#10;loan fee added." />
+    <option name="LAST_COMMIT_MESSAGE" value="purchasable square names are added.&#10;purchase operation fixed.&#10;loan fee added." />
   </component>
   <component name="simpleUML.UMLToolWindowPlugin">
     <General>
