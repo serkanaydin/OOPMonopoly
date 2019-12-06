@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4da06b6c-c115-4900-ae9d-2773bac007c8" name="Default Changelist" comment="" />
+    <list default="true" id="4da06b6c-c115-4900-ae9d-2773bac007c8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +60,7 @@
     </favorite-branches>
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="egemensag &lt;egemensag1903@hotmail.com&gt;" />
         <option value="SERKAN AYDIN &lt;serkan-aydin@msn.com&gt;" />
         <option value="SERKAN &lt;serkan-aydin@msn.com&gt;" />
         <option value="s" />
@@ -146,7 +149,7 @@
       <workItem from="1575483881732" duration="7122000" />
       <workItem from="1575555497785" duration="9026000" />
       <workItem from="1575574974716" duration="2279000" />
-      <workItem from="1575643438268" duration="529000" />
+      <workItem from="1575643438268" duration="790000" />
     </task>
     <task id="LOCAL-00001" summary="gitlab error test">
       <created>1573051894796</created>
@@ -281,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575643951216</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="purchasable square names are added.&#10;purchase operation fixed.&#10;loan fee added.">
+      <created>1575644094626</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1575644094626</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
