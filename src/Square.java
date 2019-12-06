@@ -6,11 +6,9 @@ Square {
     public int getIndex(){
         return this.index;
     }
-
     public void setName(String name) {
         this.name = name;
     }
-
     public  String getName(){
         return this.name;
     }

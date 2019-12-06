@@ -6,10 +6,22 @@
     "Tarkan",
     "1000"
   ],
+  "purchasableSquares" : [
+    "Besiktas", "Kadikoy",
+    "Sariyer", "Bebek", "Gokturk",
+    "Atasehir", "Zekeriyakoy", "Acibadem",
+    "Kurucesme", "Bostanci", "Beylikduzu",
+    "Bahcesehir", "Osmanbey", "Gayrettepe",
+    "Atakoy", "Caddebostan", "Uskudar",
+    "Beylerbeyi", "Cihangir", "Sisli",
+    "Istinye", "Beykoz", "Baltalimani",
+    "Emirgan", "Eminonu", "Tarabya", "Kanlıca"
+  , "Balat", "Yenikoy", "Kartal", "Zeytinburnu", "Unkapanı"
+  ],
   "taxSquareNumber": 4,
   "taxAmount": 200,
   "jailNumber": 3,
   "goSquareAmount": 200,
-  "purchasableNumber": 2,
+  "purchasableNumber": 32,
   "purchasablePrice": 300
 }

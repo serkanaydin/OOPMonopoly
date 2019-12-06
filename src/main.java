@@ -1,5 +1,3 @@
-import java.io.FileNotFoundException;
-import java.util.Scanner;
 import java.io.FileReader;
 import java.io.IOException;
 import org.json.simple.JSONArray;
@@ -18,13 +16,16 @@ public class main {
             String[] users = new String[totalPlayer+1];
             JSONArray jsonArray = (JSONArray)jsonObject.get("user");
             jsonArray.toArray(users);
+            int purchasableNumber = ((Number)jsonObject.get("purchasableNumber")).intValue();
+            String[] purchasable= new String[purchasableNumber ];
+             ((JSONArray)jsonObject.get("purchasableSquares")).toArray(purchasable);
             int taxSquareNumber = ((Number) jsonObject.get("taxSquareNumber")).intValue();
             int taxAmount = ((Number) jsonObject.get("taxAmount")).intValue();
             int jailNumber = ((Number)jsonObject.get("jailNumber")).intValue();
             int goSquareAmount = ((Number)jsonObject.get("goSquareAmount")).intValue();
-            int purchasableNumber = ((Number)jsonObject.get("purchasableNumber")).intValue();
+
             int purchasablePrice = ((Number) jsonObject.get("purchasablePrice")).intValue();
-            MonopolyGame monopolyGame = new MonopolyGame(users, taxSquareNumber, taxAmount, jailNumber, goSquareAmount, purchasableNumber, purchasablePrice);
+            MonopolyGame monopolyGame = new MonopolyGame(users, taxSquareNumber, taxAmount, jailNumber, goSquareAmount,purchasablePrice,purchasable);
             monopolyGame.play();
         } catch (ParseException | IOException e) {
             e.printStackTrace();
