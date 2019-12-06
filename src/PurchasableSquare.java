@@ -9,7 +9,6 @@ public class PurchasableSquare extends Square {
         printSquareInfo();
         tryPurchase(player);
     }
-
     @Override
     public void printSquareInfo() {
         String output=" Square type :  Purchasable Square," + "Square name : " +this.getName();
@@ -23,7 +22,7 @@ public class PurchasableSquare extends Square {
         }
         if(this.owner!=null) {
             if(p.getName().equals(getOwner().getName())){
-                System.out.println("");
+                System.out.println();
             }
             else {
                 p.setAccount(p.getAccount() - 50);
@@ -36,27 +35,20 @@ public class PurchasableSquare extends Square {
             System.out.println("Square : " +this.getName() + "  bought by " + p.getName());
         }
         else{ System.out.println("The square was not bought");}
-
     }
     private void completePurchase(Player p){
         p.setAccount(p.getAccount()-this.price);
         setOwner(p);
         p.addOwnedSquare(this);
     }
-    public Player getOwner(){
+    private Player getOwner(){
         return this.owner;
     }
-
     @Override
     public int getIndex() {
         return super.getIndex();
     }
-
-    public void setOwner(Player owner) {
+    private void setOwner(Player owner) {
         this.owner = owner;
-    }
-
-    public void setPrice(int price) {
-        this.price = price;
     }
 }

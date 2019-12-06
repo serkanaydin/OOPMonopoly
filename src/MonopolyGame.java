@@ -1,18 +1,16 @@
 import java.util.ArrayList;
 import java.util.Iterator;
-
-public class MonopolyGame {
+class MonopolyGame {
     private int cycleCount;
     private Die[] die;
     private ArrayList <Player> player;
     private Board board;
-public MonopolyGame(String args[],int taxSquareNumber,int taxAmount,int jailAmount,int goSquarePlus,int purchasableNumber,int purchasablePrice){
-    Board board = new Board(taxSquareNumber,taxAmount,jailAmount,goSquarePlus, purchasableNumber, purchasablePrice);
-    this.board=board;
+MonopolyGame(String[] args, int taxSquareNumber, int taxAmount, int jailAmount, int goSquarePlus, int purchasablePrice, String[] purchasable){
+    this.board= new Board(taxSquareNumber,taxAmount,jailAmount,goSquarePlus, purchasablePrice,purchasable);
     createDies();
     createPlayers(args);
 }
-  public void play(){
+  void play(){
 do{
     Iterator itr = this.player.iterator();
     while (itr.hasNext()){
@@ -26,13 +24,12 @@ do{
     this.cycleCount++;
     while (itr.hasNext()){
         Player person= (Player) itr.next();
-        person.printPlayerInfo(this,"\n");
+        person.printPlayerInfo(this);
     }
     System.out.println("----------------------------------------");
 }while(!checkGameEnd());
   }
-
- private void createPlayers( String args[]){
+ private void createPlayers(String[] args){
      ArrayList <Player> player = new ArrayList<>(args.length);
      for(int i=0;i<args.length-1;i++){
          player.add(new Player(args[i],this.die,Integer.parseInt(args[args.length-1])));
@@ -40,12 +37,12 @@ do{
      this.player=player;
  }
   private void createDies(){
-    Die die[] = new Die[2];
+    Die[] die = new Die[2];
     die[0]= new Die();
     die[1]= new Die();
     this.die=die;
   }
-  public boolean checkGameEnd(){
+  private boolean checkGameEnd(){
       Iterator itr = this.player.iterator();
       int i=0;
     while (itr.hasNext()){
@@ -55,7 +52,7 @@ do{
     }
     return (i<2);
   }
-    public int getCycleCount() {
+    int getCycleCount() {
         return this.cycleCount;
     }
 }

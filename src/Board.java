@@ -1,19 +1,19 @@
-public class Board {
+class Board {
     private Square[] square;
-    public Board(int taxSquareNumber,int taxAmount,int jailSquareAmount,int goSquarePlus,int purchasableNumber,int purchasablePrice){
+    private String [] purchasableSquareNames;
+    Board(int taxSquareNumber, int taxAmount, int jailSquareAmount, int goSquarePlus, int purchasablePrice, String[] purhasable){
+        this.purchasableSquareNames=purhasable;
         arrangeGoSquare(goSquarePlus);
         arrangeTaxSquares(taxSquareNumber,taxAmount);
         arrangeJailSquares(jailSquareAmount);
-        arrangePurchasableSquares(purchasableNumber,purchasablePrice);
-        arrangeRegularSquares();
+        arrangePurchasableSquares(purhasable.length,purchasablePrice);
     }
-    protected String [] purchasableSquareNames = {"Besiktas", "Kadikoy", "Sariyer", "Bebek", "Gokturk", "Atasehir", "Zekeriyakoy", "Acibadem", "Kurucesme", "Bostanci", "Beylikduzu", "Bahcesehir", "Osmanbey", "Gayrettepe", "Atakoy", "Caddebostan", "Uskudar", "Beylerbeyi", "Cihangir", "Sisli", "Istinye", "Beykoz", "Baltalimani", "Emirgan", "Eminonu", "Tarabya", "Kanlıca", "Balat", "Yenikoy", "Kartal", "Zeytinburnu", "Unkapanı", "Mahmutbey", "Cubuklu", "Eyup", "Avcılar", "Sefakoy", "Mecidiyekoy", "Kasımpasa", "RumeliHisari"};
 
 
-    public Square[] getSquare() {
+    Square[] getSquare() {
         return this.square;
     }
-    public void arrangePurchasableSquares(int purchasableNumber,int purchasablePrice){
+    private void arrangePurchasableSquares(int purchasableNumber, int purchasablePrice){
         if(purchasableNumber!=0){
             int index = (int)(Math.random()*40);
 
@@ -21,13 +21,13 @@ public class Board {
                 index = (int)(Math.random()*40);
             }
             this.square[index]= new PurchasableSquare(purchasablePrice);
-            this.square[index].setName(purchasableSquareNames[index]);
+            this.square[index].setName(purchasableSquareNames[purchasableNumber-1]);
             this.square[index].setIndex(index);
-            arrangeJailSquares(purchasableNumber-1);
+            arrangePurchasableSquares(purchasableNumber-1,purchasablePrice);
         }
     }
-    public void arrangeGoSquare(int goSquarePlus){
-        Square square[] = new Square[40];
+    private void arrangeGoSquare(int goSquarePlus){
+        Square[] square = new Square[40];
 
         square[0]= new GoSquare(goSquarePlus);
         square[0].setIndex(0);
@@ -36,7 +36,7 @@ public class Board {
         this.square=square;
 
     }
-    public void arrangeTaxSquares(int taxSquaresNumber,int tax){
+    private void arrangeTaxSquares(int taxSquaresNumber, int tax){
         if(taxSquaresNumber!=0){
             int squareIndex = (int)(Math.random()*40);
             while(square[squareIndex]!=null)
@@ -47,7 +47,7 @@ public class Board {
             arrangeTaxSquares(taxSquaresNumber-1,tax);
         }
     }
-    public void arrangeJailSquares(int jailSquaresNumber){
+    private void arrangeJailSquares(int jailSquaresNumber){
         if(jailSquaresNumber!=0){
             int index = (int)(Math.random()*40);
 
@@ -62,15 +62,5 @@ public class Board {
             arrangeJailSquares(jailSquaresNumber-1);
         }
     }
-    public void arrangeRegularSquares(){
-        int k=0;
-        for(int i=0 ;i<this.square.length;i++){
-            if(square[i]==null){
-                square[i] = new PurchasableSquare(100);
-                square[i].setIndex(i);
-                square[i].setName(purchasableSquareNames[k]);
-                k++;
-            }
-        }
-    }
+
 }
