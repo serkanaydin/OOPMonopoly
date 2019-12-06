@@ -146,6 +146,7 @@
       <workItem from="1575483881732" duration="7122000" />
       <workItem from="1575555497785" duration="9026000" />
       <workItem from="1575574974716" duration="2279000" />
+      <workItem from="1575643438268" duration="225000" />
     </task>
     <task id="LOCAL-00001" summary="gitlab error test">
       <created>1573051894796</created>
@@ -312,33 +313,6 @@
     <MESSAGE value="json file edited" />
     <MESSAGE value="23.18 started sketch uml diagrams" />
     <option name="LAST_COMMIT_MESSAGE" value="23.18 started sketch uml diagrams" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/Board.java</url>
-          <line>26</line>
-          <properties class="Board" method="arrangeGoSquare">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main.java</url>
-          <line>10</line>
-          <properties class="main" method="main">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="simpleUML.UMLToolWindowPlugin">
     <General>
