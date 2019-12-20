@@ -27,8 +27,10 @@ void playerTurn(Board board, MonopolyGame mgame){
    int dice1=0;
    int dice2=0;
     if(this.getAccount()>0){
-        dice1=this.getDie()[0].toss();
-        dice2=this.getDie()[1].toss();
+        this.getDie()[0].toss();
+        dice1= this.getDie()[0].getFV();
+        this.getDie()[1].toss();
+        dice2= this.getDie()[1].getFV();
         diceSums= dice1+dice2;
        this.incrementTurnCounter();
     }

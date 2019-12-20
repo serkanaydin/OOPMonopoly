@@ -10,9 +10,12 @@ public class IncomeTaxSquare extends Square {
         printSquareInfo();
     }
 public void printSquareInfo(){
-   String output=" Square type :  Tax square Square name : "+this.getName()+ " Tax amount " + this.tax;
+   String output=" Square type :  Tax square Square name : "+this.getName()+  " Square index : " + this.getIndex() + " Tax amount " + this.tax;
     System.out.println(output);
 
 }
 
+    public int getTax() {
+        return tax;
+    }
 }

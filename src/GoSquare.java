@@ -11,4 +11,8 @@ printSquareInfo();
         String output=" Square type :  Go Square " + "Square name : " +this.getName();
         System.out.println(output);
     }
+
+    public int getAmount() {
+        return amount;
+    }
 }

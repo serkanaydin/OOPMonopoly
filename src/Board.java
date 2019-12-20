@@ -21,9 +21,18 @@ class Board {
                 index = (int)(Math.random()*40);
             }
             this.square[index]= new PurchasableSquare(purchasablePrice);
-            this.square[index].setName(purchasableSquareNames[purchasableNumber-1]);
+
             this.square[index].setIndex(index);
             arrangePurchasableSquares(purchasableNumber-1,purchasablePrice);
+        }
+        else{
+            int k=0;
+            for (Square value : this.square) {
+                if (value instanceof PurchasableSquare) {
+                    value.setName("PurchasableSquare" + k);
+                    k++;
+                }
+            }
         }
     }
     private void arrangeGoSquare(int goSquarePlus){
@@ -42,9 +51,17 @@ class Board {
             while(square[squareIndex]!=null)
                 squareIndex = (int)(Math.random()*40);
             this.square[squareIndex]=new IncomeTaxSquare(tax);
-            this.square[squareIndex].setName("Tax Square");
             this.square[squareIndex].setIndex(squareIndex);
             arrangeTaxSquares(taxSquaresNumber-1,tax);
+        }
+        else{
+            int k=0;
+            for (Square value : this.square) {
+                if (value instanceof IncomeTaxSquare) {
+                    value.setName("TaxSqaure" + k);
+                    k++;
+                }
+            }
         }
     }
     private void arrangeJailSquares(int jailSquaresNumber){
@@ -56,10 +73,18 @@ class Board {
             }
 
             this.square[index]= new GoToJailSquare();
-            this.square[index].setName("JailSquare");
             this.square[index].setIndex(index);
 
             arrangeJailSquares(jailSquaresNumber-1);
+        }
+        else{
+            int k=0;
+            for (Square value : this.square) {
+                if (value instanceof GoToJailSquare) {
+                    value.setName("GoToJailSquare" + k);
+                    k++;
+                }
+            }
         }
     }
 

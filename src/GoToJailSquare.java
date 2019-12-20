@@ -8,7 +8,7 @@ public class GoToJailSquare extends Square {
 
     }
     public void printSquareInfo(){
-        String output=" Square type : Jail Square Square name : " + this.getName() + " player was gone to jail";
+        String output=" Square type : Jail Square Square name : " + this.getName()  + " Square index : " + this.getIndex() + " player was gone to jail";
         System.out.println(output);
 
     }

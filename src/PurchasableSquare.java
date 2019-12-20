@@ -1,4 +1,4 @@
-public class PurchasableSquare extends Square {
+public class PurchasableSquare extends UtilitySquare {
     private Player owner;
     private int price;
 
@@ -11,7 +11,7 @@ public class PurchasableSquare extends Square {
     }
     @Override
     public void printSquareInfo() {
-        String output=" Square type :  Purchasable Square," + "Square name : " +this.getName();
+        String output=" Square type :  Purchasable Square," + "Square name : " +this.getName() + " Square index : " + this.getIndex();
         System.out.println(output);
     }
     private void tryPurchase(Player p){
@@ -50,5 +50,9 @@ public class PurchasableSquare extends Square {
     }
     private void setOwner(Player owner) {
         this.owner = owner;
+    }
+
+    public int getPrice() {
+        return price;
     }
 }
