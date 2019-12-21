@@ -14,8 +14,9 @@ class BoardTest {
                 "Istinye", "Beykoz", "Baltalimani",
                 "Emirgan", "Eminonu", "Tarabya", "Kanlıca"
                 , "Balat", "Yenikoy", "Kartal"};
+        Card[] cards = new Card[3];
 
-      Board board = new Board(4,200, 5,300,500,str);
+      Board board = new Board(4,200, 5,300,500,str,cards);
     int totalSquare =testPurchasable(board,500,str.length)+
     testGoSquare(board,300)+
     testIncomeTaxSquare(board,4,200)+

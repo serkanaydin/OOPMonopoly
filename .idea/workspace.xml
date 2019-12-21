@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4da06b6c-c115-4900-ae9d-2773bac007c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Card.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ChanceSquare.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Piece.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BoardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BoardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ChanceSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChanceSquare.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MonopolyGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MonopolyGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/input.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/input.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -204,7 +199,7 @@
       <workItem from="1576793459231" duration="281000" />
       <workItem from="1576837997648" duration="7241000" />
       <workItem from="1576913260863" duration="1246000" />
-      <workItem from="1576922434533" duration="5590000" />
+      <workItem from="1576922434533" duration="6606000" />
     </task>
     <task id="LOCAL-00001" summary="gitlab error test">
       <created>1573051894796</created>
@@ -346,7 +341,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575644094626</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="some update">
+      <created>1576944471952</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1576944471952</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -385,7 +387,8 @@
     <MESSAGE value="json file edited" />
     <MESSAGE value="23.18 started sketch uml diagrams" />
     <MESSAGE value="purchasable square names are added.&#10;purchase operation fixed.&#10;loan fee added." />
-    <option name="LAST_COMMIT_MESSAGE" value="purchasable square names are added.&#10;purchase operation fixed.&#10;loan fee added." />
+    <MESSAGE value="some update" />
+    <option name="LAST_COMMIT_MESSAGE" value="some update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

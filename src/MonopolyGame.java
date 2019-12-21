@@ -1,14 +1,17 @@
 import java.util.ArrayList;
 import java.util.Iterator;
 class MonopolyGame {
+    private Card[] card;
     private int cycleCount;
     private Die[] die;
     private ArrayList <Player> player;
     private Board board;
 MonopolyGame(String[] args, int taxSquareNumber, int taxAmount, int jailAmount, int goSquarePlus, int purchasablePrice, String[] purchasable){
-    this.board= new Board(taxSquareNumber,taxAmount,jailAmount,goSquarePlus, purchasablePrice,purchasable);
+    createCards();
+    this.board= new Board(taxSquareNumber,taxAmount,jailAmount,goSquarePlus, purchasablePrice,purchasable,this.card);
     createDies();
     createPlayers(args);
+
 }
   void play(){
 do{
@@ -32,6 +35,13 @@ for(Player person:this.player){
     if(person.getAccount()>0)
         System.out.println("Player : " + person.getName() + " won the game");
 }
+  }
+  private void createCards(){
+    Card[] card = new Card[3];
+    card[0]= new Card("JailCard");
+    card[1]=new Card("BonusCard");
+    card[2]= new Card("HaraçCard");
+    this.card=card;
   }
  private void createPlayers(String[] args){
      ArrayList <Player> player = new ArrayList<>(args.length);

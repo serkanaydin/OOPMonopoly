@@ -1,7 +1,9 @@
 class Board {
+    private Card[] card;
     private Square[] square;
     private String [] purchasableSquareNames;
-    Board(int taxSquareNumber, int taxAmount, int jailSquareAmount, int goSquarePlus, int purchasablePrice, String[] purhasable){
+    Board(int taxSquareNumber, int taxAmount, int jailSquareAmount, int goSquarePlus, int purchasablePrice, String[] purhasable,Card[] card){
+        this.card=card;
         this.purchasableSquareNames=purhasable;
         arrangeGoSquare(goSquarePlus);
         arrangeTaxSquares(taxSquareNumber,taxAmount);
@@ -11,7 +13,11 @@ class Board {
 
     }
 
-private void arrangeChanceSquares(int chanceSquaresAmount){
+    public Card[] getCard() {
+        return this.card;
+    }
+
+    private void arrangeChanceSquares(int chanceSquaresAmount){
         if(chanceSquaresAmount!=0){
             int index = (int)(Math.random()*40);
 
