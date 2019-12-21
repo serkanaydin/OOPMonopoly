@@ -6,11 +6,34 @@ class Board {
         arrangeGoSquare(goSquarePlus);
         arrangeTaxSquares(taxSquareNumber,taxAmount);
         arrangeJailSquares(jailSquareAmount);
+        arrangeChanceSquares(2);
         arrangePurchasableSquares(purhasable.length,purchasablePrice);
+
     }
 
+private void arrangeChanceSquares(int chanceSquaresAmount){
+        if(chanceSquaresAmount!=0){
+            int index = (int)(Math.random()*40);
 
-    Square[] getSquare() {
+            while(square[index]!=null){
+                index = (int)(Math.random()*40);
+            }
+            this.square[index]= new ChanceSquare();
+
+            this.square[index].setIndex(index);
+            arrangeChanceSquares(chanceSquaresAmount-1);
+        }
+        else{
+            int k=0;
+            for (Square value : this.square) {
+                if (value instanceof ChanceSquare) {
+                    value.setName("ChanceSquare" + k);
+                    k++;
+                }
+            }
+        }
+}
+    Square[] getSquareArray() {
         return this.square;
     }
     private void arrangePurchasableSquares(int purchasableNumber, int purchasablePrice){
@@ -86,6 +109,16 @@ class Board {
                 }
             }
         }
+    }
+    public Square getJail(){
+        for (int i=0;i<this.square.length;i++){
+            if(this.square[i] instanceof GoToJailSquare)
+                return this.square[i];
+        }
+        return null;
+    }
+    public Square getSquare(Piece piece, int sumDices){
+        return this.square[(piece.getSquare().getIndex()+sumDices)%40];
     }
 
 }

@@ -3,13 +3,15 @@ import java.util.ArrayList;
 public class Player {
     private int account;
     private int turnCounter;
-    private Square square;
+    Board board;
+    private Piece piece;
     private String name;
     private Die[] die;
     private ArrayList<PurchasableSquare> ownerSquares;
 
 
-Player(String name,Die[] die,int balance){
+Player(String name,Die[] die,int balance,Board board){
+    this.board=board;
     this.ownerSquares = new ArrayList<PurchasableSquare>();
     this.turnCounter=0;
     this.name=name;
@@ -17,12 +19,24 @@ Player(String name,Die[] die,int balance){
     this.account=balance;
 }
 
-private void incrementTurnCounter(){
+    public Board getBoard() {
+        return this.board;
+    }
+
+    public void setPiece(Piece piece) {
+        this.piece = piece;
+    }
+
+    public Piece getPiece() {
+        return this.piece;
+    }
+
+    private void incrementTurnCounter(){
     this.turnCounter++;
     }
 void playerTurn(Board board, MonopolyGame mgame){
     printPlayerInfo(mgame);
-    this.square.printSquareInfo();
+    this.piece.square.printSquareInfo();
    int diceSums=0;
    int dice1=0;
    int dice2=0;
@@ -39,10 +53,10 @@ void playerTurn(Board board, MonopolyGame mgame){
 
         printPlayerInfo(mgame);
         System.out.println(output);
-if(!(this.square instanceof GoToJailSquare ) || dice1==dice2)
-        this.setSquare(board.getSquare()[(this.getSquare().getIndex()+diceSums)%40]);
+if(!(this.piece.getSquare() instanceof GoToJailSquare ) || dice1==dice2)
+        setLocation(diceSums);
     }
-    this.square.landedOn(this);
+    this.piece.square.landedOn(this);
     System.out.println();
 }
 void printPlayerInfo(MonopolyGame mgame){
@@ -57,12 +71,10 @@ void printPlayerInfo(MonopolyGame mgame){
     void setAccount(int account) {
         this.account = account;
     }
-    private Square getSquare() {
-        return this.square;
+    public void setLocation(int diceSums){
+        this.getPiece().setSquare(board.getSquare(this.piece,diceSums));
     }
-    void setSquare(Square square) {
-        this.square = square;
-    }
+
     private Die[] getDie() {
         return this.die;
     }

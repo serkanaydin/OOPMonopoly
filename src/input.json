@@ -16,12 +16,12 @@
     "Beylerbeyi", "Cihangir", "Sisli",
     "Istinye", "Beykoz", "Baltalimani",
     "Emirgan", "Eminonu", "Tarabya", "Kanlıca"
-  , "Balat", "Yenikoy", "Kartal", "Zeytinburnu", "Unkapanı"
+  , "Balat", "Yenikoy", "Kartal"
   ],
   "taxSquareNumber": 4,
   "taxAmount": 200,
   "jailNumber": 3,
   "goSquareAmount": 200,
-  "purchasableNumber": 32,
+  "purchasableNumber": 30,
   "purchasablePrice": 300
 }

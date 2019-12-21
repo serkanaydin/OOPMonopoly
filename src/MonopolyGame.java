@@ -28,12 +28,17 @@ do{
     }
     System.out.println("----------------------------------------");
 }while(!checkGameEnd());
+for(Player person:this.player){
+    if(person.getAccount()>0)
+        System.out.println("Player : " + person.getName() + " won the game");
+}
   }
  private void createPlayers(String[] args){
      ArrayList <Player> player = new ArrayList<>(args.length);
      for(int i=0;i<args.length-1;i++){
-         player.add(new Player(args[i],this.die,Integer.parseInt(args[args.length-1])));
-     player.get(i).setSquare(board.getSquare()[0]);}
+         player.add(new Player(args[i],this.die,Integer.parseInt(args[args.length-1]),this.board));
+         player.get(i).setPiece(new Piece(board.getSquareArray()[0]));
+    }
      this.player=player;
  }
   private void createDies(){
