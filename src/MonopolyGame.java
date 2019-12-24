@@ -6,9 +6,10 @@ class MonopolyGame {
     private Die[] die;
     private ArrayList <Player> player;
     private Board board;
-MonopolyGame(String[] args, int taxSquareNumber, int taxAmount, int jailAmount, int goSquarePlus, int purchasablePrice, String[] purchasable){
+MonopolyGame(String[] args, int taxSquareNumber, int taxAmount, int jailAmount, int goSquarePlus, int constructable,int constructablePrice,
+             int railway,        int railwayPrice, String[] purchasable){
     createCards();
-    this.board= new Board(taxSquareNumber,taxAmount,jailAmount,goSquarePlus, purchasablePrice,purchasable,this.card);
+    this.board= new Board(taxSquareNumber,taxAmount,jailAmount,goSquarePlus, constructable,constructablePrice,railway,railwayPrice,purchasable,this.card);
     createDies();
     createPlayers(args);
 

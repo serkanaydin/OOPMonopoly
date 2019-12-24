@@ -2,21 +2,32 @@ class Board {
     private Card[] card;
     private Square[] square;
     private String [] purchasableSquareNames;
-    Board(int taxSquareNumber, int taxAmount, int jailSquareAmount, int goSquarePlus, int purchasablePrice, String[] purhasable,Card[] card){
+    Board(int taxSquareNumber, int taxAmount, int jailSquareAmount, int goSquarePlus, int constructable,int constructablePrice,
+          int railway,        int railwayPrice, String[] purhasable,Card[] card){
         this.card=card;
         this.purchasableSquareNames=purhasable;
         arrangeGoSquare(goSquarePlus);
         arrangeTaxSquares(taxSquareNumber,taxAmount);
         arrangeJailSquares(jailSquareAmount);
         arrangeChanceSquares(2);
-        arrangePurchasableSquares(purhasable.length,purchasablePrice);
-
+        arrangeConstructableSquares(constructable,constructablePrice);
+        arrangeRailwaySquares(railway,railwayPrice);
+        arrangeRegularSquares();
     }
 
     public Card[] getCard() {
         return this.card;
     }
-
+private void arrangeRegularSquares(){
+        int k=0;
+        for(int i=0;i<40;i++){
+            if(this.square[i]==null){
+                this.square[i]=new RegularSquare();
+                this.square[i].setName("RegularSquare"+k);
+                k++;
+            }
+        }
+}
     private void arrangeChanceSquares(int chanceSquaresAmount){
         if(chanceSquaresAmount!=0){
             int index = (int)(Math.random()*40);
@@ -42,23 +53,46 @@ class Board {
     Square[] getSquareArray() {
         return this.square;
     }
-    private void arrangePurchasableSquares(int purchasableNumber, int purchasablePrice){
-        if(purchasableNumber!=0){
+    private void arrangeConstructableSquares(int constructable, int constructablePrice){
+        if(constructable!=0){
             int index = (int)(Math.random()*40);
 
             while(square[index]!=null){
                 index = (int)(Math.random()*40);
             }
-            this.square[index]= new PurchasableSquare(purchasablePrice);
+            this.square[index]= new ConstrucableSquare(constructablePrice);
+            ((ConstrucableSquare)(this.square[index])).setHotel(false);
+            ((ConstrucableSquare)(this.square[index])).setHouseCount(0);
 
             this.square[index].setIndex(index);
-            arrangePurchasableSquares(purchasableNumber-1,purchasablePrice);
+            arrangeConstructableSquares(constructable-1,constructablePrice);
         }
         else{
             int k=0;
             for (Square value : this.square) {
-                if (value instanceof PurchasableSquare) {
-                    value.setName("PurchasableSquare" + k);
+                if (value instanceof ConstrucableSquare) {
+                    value.setName("ConstructableSquare" + k);
+                    k++;
+                }
+            }
+        }}
+        private void arrangeRailwaySquares(int railway,int railwayPrice){
+            if(railway!=0){
+                int index = (int)(Math.random()*40);
+
+                while(square[index]!=null){
+                    index = (int)(Math.random()*40);
+                }
+                this.square[index]= new RailwaySquare(railwayPrice);
+
+                this.square[index].setIndex(index);
+                arrangeConstructableSquares(railway-1,railwayPrice);
+            }
+        else{
+            int k=0;
+            for (Square value : this.square) {
+                if (value instanceof RailwaySquare) {
+                    value.setName("RailwaySquare" + k);
                     k++;
                 }
             }

@@ -1,20 +1,12 @@
-public class PurchasableSquare extends UtilitySquare {
+public abstract class PurchasableSquare extends Square {
     private Player owner;
     private int price;
 
     PurchasableSquare(int price){
         this.price=price;
     }
-    public void landedOn(Player player) {
-        printSquareInfo();
-        tryPurchase(player);
-    }
-    @Override
-    public void printSquareInfo() {
-        String output=" Square type :  Purchasable Square," + "Square name : " +this.getName() + " Square index : " + this.getIndex();
-        System.out.println(output);
-    }
-    private void tryPurchase(Player p){
+    public abstract void payFee(Player player);
+    void tryPurchase(Player p,PurchasableSquare s){
         int random = (int)(Math.random()*9+1);
         boolean acceptedBuy=false;
         if(random>5) {
@@ -25,9 +17,7 @@ public class PurchasableSquare extends UtilitySquare {
                 System.out.println();
             }
             else {
-                p.setAccount(p.getAccount() - 50);
-                getOwner().setAccount(getOwner().getAccount() + 50);
-                System.out.println("Square : " + this.getName() + " owned by " + getOwner().getName() + "." + p.getName() + " will give rental fee 50  " + getOwner().getName());
+               s.payFee(p);
             }
         }
         if(acceptedBuy && (p.getAccount()>this.price) && (this.owner==null)) {
@@ -41,14 +31,14 @@ public class PurchasableSquare extends UtilitySquare {
         setOwner(p);
         p.addOwnedSquare(this);
     }
-    private Player getOwner(){
+     Player getOwner(){
         return this.owner;
     }
     @Override
     public int getIndex() {
         return super.getIndex();
     }
-    private void setOwner(Player owner) {
+     void setOwner(Player owner) {
         this.owner = owner;
     }
 

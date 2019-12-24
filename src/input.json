@@ -22,6 +22,9 @@
   "taxAmount": 200,
   "jailNumber": 3,
   "goSquareAmount": 200,
-  "purchasableNumber": 30,
-  "purchasablePrice": 300
+  "regularSquare": 10,
+  "constructable": 10,
+  "railway" :10,
+  "railwayPrice": 200,
+  "constructablePrice": 300
 }
