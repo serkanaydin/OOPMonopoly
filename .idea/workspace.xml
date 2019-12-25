@@ -5,17 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Board.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ChanceSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChanceSquare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ConstrucableSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConstrucableSquare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Die.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Die.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GoSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GoSquare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GoToJailSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GoToJailSquare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IncomeTaxSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IncomeTaxSquare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MonopolyGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MonopolyGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Piece.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RailwaySquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RailwaySquare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RegularSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RegularSquare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UtilitySquare.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -224,7 +213,7 @@
       <workItem from="1577090147133" duration="337000" />
       <workItem from="1577126482605" duration="1297000" />
       <workItem from="1577190444405" duration="7223000" />
-      <workItem from="1577272365792" duration="3629000" />
+      <workItem from="1577272365792" duration="5132000" />
     </task>
     <task id="LOCAL-00001" summary="gitlab error test">
       <created>1573051894796</created>
@@ -387,7 +376,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577197947423</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="some update">
+      <created>1577277177368</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1577277177368</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

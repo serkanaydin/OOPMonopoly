@@ -19,7 +19,9 @@ private void arrangeRegularSquares(){
         int k=0;
         for(int i=0;i<40;i++){
             if(this.square[i]==null){
+
                 this.square[i]=new RegularSquare();
+                this.square[i].setIndex(i);
                 this.square[i].setName("RegularSquare"+k);
                 k++;
             }

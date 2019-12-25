@@ -43,8 +43,8 @@ public class ConstrucableSquare extends PurchasableSquare{
     }
     @Override
     public void printSquareInfo() {
-        String output=" Square type :  Constructable square " + "Square name : " +this.getName() +" Square index : "+ this.getIndex() + " Square owner : " + (this.getOwner()==null? " null " :this.getOwner().getName());
-        output+= this.hotel?"Building type : Hotel ":"Building type : House; House count : " + this.houseCount;
+        String output=" Square type :  Constructable square " + " Square name : " +this.getName() +" Square index : "+ this.getIndex() + " Square owner : " + (this.getOwner()==null? " null " :this.getOwner().getName());
+        output+= this.hotel?" Building type : Hotel ":" Building type : House; House count : " + this.houseCount;
         System.out.println(output);
     }
 }

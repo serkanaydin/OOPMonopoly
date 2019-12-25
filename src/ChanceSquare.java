@@ -13,10 +13,11 @@ public class ChanceSquare extends Square {
         else if(player.getBoard().getCard()[random].getFunction().equals("HaraçCard")){
             player.setAccount(player.getAccount()-200);
         System.out.println("Player lost 200$");}
+            printSquareInfo();
     }
     @Override
     public void printSquareInfo() {
-        String output=" Square type :  Chance Square" + "Square name : " +this.getName();
+        String output=" Square type :  Chance Square" + "Square name : " +this.getName() + " Square index : "+ this.getIndex();
         System.out.println(output);
     }
 }
