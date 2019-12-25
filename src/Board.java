@@ -14,10 +14,7 @@ class Board {
         arrangeRailwaySquares(railway,railwayPrice);
         arrangeRegularSquares();
     }
-
-    public Card[] getCard() {
-        return this.card;
-    }
+    public Card[] getCard() { return this.card; }
 private void arrangeRegularSquares(){
         int k=0;
         for(int i=0;i<40;i++){
@@ -50,9 +47,7 @@ private void arrangeRegularSquares(){
             }
         }
 }
-    Square[] getSquareArray() {
-        return this.square;
-    }
+    Square[] getSquareArray() { return this.square; }
     private void arrangeConstructableSquares(int constructable, int constructablePrice){
         if(constructable!=0){
             int index = (int)(Math.random()*40);
@@ -106,7 +101,6 @@ private void arrangeRegularSquares(){
         square[0].setName("Go Square");
 
         this.square=square;
-
     }
     private void arrangeTaxSquares(int taxSquaresNumber, int tax){
         if(taxSquaresNumber!=0){
@@ -157,8 +151,6 @@ private void arrangeRegularSquares(){
         }
         return null;
     }
-    public Square getSquare(Piece piece, int sumDices){
-        return this.square[(piece.getSquare().getIndex()+sumDices)%40];
+    public Square getSquare(Piece piece, int sumDices){ return this.square[(piece.getSquare().getIndex()+sumDices)%40];
     }
-
 }

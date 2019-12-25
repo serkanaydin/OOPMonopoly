@@ -6,7 +6,6 @@ public class ChanceSquare extends Square {
             player.getPiece().setSquare(player.getBoard().getJail());
             System.out.println("Player sent to jail");
         }
-
         else if(player.getBoard().getCard()[random].getFunction().equals("BonusCard")) {
             player.setAccount(player.getAccount() + 200);
             System.out.println("Player got 200$");
@@ -15,7 +14,6 @@ public class ChanceSquare extends Square {
             player.setAccount(player.getAccount()-200);
         System.out.println("Player lost 200$");}
     }
-
     @Override
     public void printSquareInfo() {
         String output=" Square type :  Chance Square" + "Square name : " +this.getName();

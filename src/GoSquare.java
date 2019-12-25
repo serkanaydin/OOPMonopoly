@@ -5,14 +5,12 @@ public class GoSquare extends Square{
   }
     public void landedOn(Player player){
       player.setAccount(player.getAccount()+this.amount);
-printSquareInfo();
+      printSquareInfo();
     }
     public void printSquareInfo(){
         String output=" Square type :  Go Square " + "Square name : " +this.getName();
         System.out.println(output);
     }
 
-    public int getAmount() {
-        return amount;
-    }
+    public int getAmount() { return this.amount; }
 }

@@ -1,13 +1,10 @@
 public class Piece {
-    Square square;
-Piece(Square square){
-    this.square = square;
-}
+    private Square square;
+Piece(Square square){ this.square = square; }
     public void setSquare(Square square) {
         this.square = square;
     }
-
     public Square getSquare() {
-        return square;
+        return this.square;
     }
 }

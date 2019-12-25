@@ -6,13 +6,13 @@ class MonopolyGame {
     private Die[] die;
     private ArrayList <Player> player;
     private Board board;
-MonopolyGame(String[] args, int taxSquareNumber, int taxAmount, int jailAmount, int goSquarePlus, int constructable,int constructablePrice,
-             int railway,        int railwayPrice, String[] purchasable){
+MonopolyGame(String[] args, int taxSquareNumber, int taxAmount, int jailAmount,
+             int goSquarePlus, int constructable,int constructablePrice,
+             int railway,int railwayPrice, String[] purchasable){
     createCards();
     this.board= new Board(taxSquareNumber,taxAmount,jailAmount,goSquarePlus, constructable,constructablePrice,railway,railwayPrice,purchasable,this.card);
     createDies();
     createPlayers(args);
-
 }
   void play(){
 do{
@@ -20,7 +20,7 @@ do{
     while (itr.hasNext()){
         Player person= (Player) itr.next();
         if(person.getAccount()>0) {
-            person.playerTurn(this.board, this);
+            person.playerTurn(this);
         }
     }
     System.out.println("\nCycle end informations\n----------------------------------------");

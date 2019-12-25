@@ -19,9 +19,7 @@ Player(String name,Die[] die,int balance,Board board){
     this.account=balance;
 }
 
-    public Board getBoard() {
-        return this.board;
-    }
+    public Board getBoard() { return this.board; }
 
     public void setPiece(Piece piece) {
         this.piece = piece;
@@ -34,9 +32,9 @@ Player(String name,Die[] die,int balance,Board board){
     private void incrementTurnCounter(){
     this.turnCounter++;
     }
-void playerTurn(Board board, MonopolyGame mgame){
+    void playerTurn(MonopolyGame mgame){
     printPlayerInfo(mgame);
-    this.piece.square.printSquareInfo();
+    this.piece.getSquare().printSquareInfo();
    int diceSums=0;
    int dice1=0;
    int dice2=0;
@@ -50,16 +48,13 @@ void playerTurn(Board board, MonopolyGame mgame){
     }
     if(diceSums>=1){
       String output="Turn player : "+ this.name +" Dice 1 face value : " + dice1 + " Dice 2 face value : " + dice2 + " Total value : " + diceSums;
-
-        printPlayerInfo(mgame);
         System.out.println(output);
-if(!(this.piece.getSquare() instanceof GoToJailSquare ) || dice1==dice2)
-        setLocation(diceSums);
-    }
-    this.piece.square.landedOn(this);
+    if(!(this.piece.getSquare() instanceof GoToJailSquare ) || dice1==dice2) setLocation(diceSums); }
+    this.piece.getSquare().landedOn(this);
+    printPlayerInfo(mgame);
     System.out.println();
 }
-void printPlayerInfo(MonopolyGame mgame){
+    void printPlayerInfo(MonopolyGame mgame){
     String output="Player name : " +this.name  +" Player balance : "+
             this.account +" Player turn counter : " + this.turnCounter +
             " Cycle counter "+ mgame.getCycleCount() ;
@@ -74,14 +69,13 @@ void printPlayerInfo(MonopolyGame mgame){
     public void setLocation(int diceSums){
         this.getPiece().setSquare(board.getSquare(this.piece,diceSums));
     }
-
     private Die[] getDie() {
         return this.die;
     }
     int getAccount() {
         return this.account;
     }
-void addOwnedSquare(PurchasableSquare purchasable){
+    void addOwnedSquare(PurchasableSquare purchasable){
     this.ownerSquares.add(purchasable);
 }
 }
